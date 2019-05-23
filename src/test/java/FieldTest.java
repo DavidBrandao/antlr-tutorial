@@ -8,7 +8,8 @@ public class FieldTest {
 
     @Test
     public void testExampleField() throws Exception {
-        FieldLexer l = new FieldLexer(new ANTLRInputStream(getClass().getResourceAsStream("/example.field")));
+        FieldLexer l = new FieldLexer(
+                new ANTLRInputStream(getClass().getResourceAsStream("/example.field")));
         FieldParser p = new FieldParser(new CommonTokenStream(l));
         p.addErrorListener(new BaseErrorListener() {
             @Override

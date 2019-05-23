@@ -1,0 +1,12 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "antlr-tutorial",
+            "console": "integratedTerminal"
+        }
+    ]
+}

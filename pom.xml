@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.alexecollins</groupId>
+    <groupId>br.edu.unibratec.lfc</groupId>
     <artifactId>antlr-tutorial</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -14,7 +13,13 @@
             <plugin>
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr4-maven-plugin</artifactId>
-                <version>4.0</version>
+                <version>4.7</version>
+                <configuration>
+                    <!-- <arguments>
+                        <argument>-package</argument>
+                        <argument>FieldLang</argument>
+                    </arguments> -->
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
@@ -48,7 +53,7 @@
         <dependency>
             <groupId>org.antlr</groupId>
             <artifactId>antlr4-runtime</artifactId>
-            <version>4.0</version>
+            <version>4.7</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
